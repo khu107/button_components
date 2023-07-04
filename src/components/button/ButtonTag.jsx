@@ -1,10 +1,14 @@
-import { useState } from 'react';
 import { Btn } from './style';
 
-function ButtonTag({ size, children, clickhand }) {
-  console.log(clickhand);
+function ButtonTag({ size, children, onClick, color, bg, boxborder }) {
   return (
-    <Btn onClick={clickhand} size={size}>
+    <Btn
+      onClick={onClick}
+      size={size}
+      color={color}
+      boxborder={boxborder}
+      bg={bg}
+    >
       {children}
     </Btn>
   );

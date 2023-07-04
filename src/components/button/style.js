@@ -3,19 +3,18 @@ import { css, styled } from 'styled-components';
 export const Btn = styled.button`
   border: none;
   cursor: pointer;
-
   border-radius: 8px;
-  color: rgb(0, 0, 0);
-  background-color: rgb(85, 239, 196);
+  color: ${(props) => props.color};
+  background-color: ${(props) => props.bg};
   font-size: 13px;
-  font-weight: bold;
   ${(props) =>
     props.size === 'large' &&
     css`
       width: 200px;
       height: 50px;
       background-color: white;
-      border: 3px solid rgb(85, 239, 196);
+      border: 3px solid ${(props) => props.boxborder};
+      font-weight: bold;
     `}
   ${(props) =>
     props.size === 'medium' &&
