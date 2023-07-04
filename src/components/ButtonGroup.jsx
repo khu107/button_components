@@ -10,7 +10,6 @@ const LargeFlex = {
 function ButtonGroup() {
   return (
     <>
-      <h2>Button</h2>
       <div className="BtnBox">
         <ButtonTag
           boxborder="rgb(85, 239, 196)"

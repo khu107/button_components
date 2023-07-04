@@ -1,17 +1,14 @@
 import './App.css';
 import ButtonGroup from './components/ButtonGroup';
-
-import InputTag from './components/input/InputTag';
+import InputGroup from './components/InputGroup';
 
 function App() {
   return (
     <>
+      <h2>Button</h2>
       <ButtonGroup />
-      <h2>Input</h2>
-      <label htmlFor="">이름</label>
-      <InputTag />
-      <label htmlFor="">name</label>
-      <InputTag />{' '}
+      <h2>input</h2>
+      <InputGroup />
     </>
   );
 }
