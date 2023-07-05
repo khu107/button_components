@@ -2,7 +2,7 @@ import { useState } from 'react';
 import ButtonTag from './button/ButtonTag';
 import InputTag from './input/InputTag';
 
-const style = { display: 'flex', gap: '30px' };
+const style = { display: 'flex', gap: '30px', margin: '20px 0 20px 0' };
 
 function InputGroup() {
   const [name, setName] = useState('');
@@ -39,8 +39,7 @@ function InputGroup() {
         <InputTag value={price} onChange={priceHandler} type="text" />
       </div>
       <ButtonTag bg="rgb(85, 239, 196)" onClick={btnHandler} size="small">
-        {' '}
-        확인
+        저장
       </ButtonTag>
     </div>
   );
