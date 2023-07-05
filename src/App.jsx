@@ -13,7 +13,6 @@ function App() {
       <InputGroup />
       <h2>Modal</h2>
       <ModalGroup />
-      <h2>Select</h2>
       <SelectGroup />
     </>
   );
