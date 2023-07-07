@@ -1,14 +1,17 @@
 import { css, styled } from 'styled-components';
-export const ModalOpacity = styled.div`
-  width: 100%;
-  height: 100vh;
-  inset: 0px;
+export const OVERLAY_STYLES = styled.div`
   position: fixed;
-  opacity: 0.8;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
   background-color: rgb(221, 221, 221);
+  z-index: 1000;
 `;
 
 export const ModalWrapper = styled.div`
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -16,7 +19,7 @@ export const ModalWrapper = styled.div`
   box-sizing: border-box;
   padding: 24px;
   background-color: white;
-  position: absolute;
+  z-index: 1000;
   ${(props) =>
     props.size === 'medium' &&
     css`

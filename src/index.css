@@ -10,6 +10,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --btn1-bg-border-color: rgb(85, 239, 196);
+  --btn2-bg-border-color: rgb(250, 177, 160);
 }
 
 a {
