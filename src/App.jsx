@@ -2,7 +2,6 @@ import './App.css';
 import ButtonGroup from './components/ButtonGroup';
 import InputGroup from './components/InputGroup';
 import ModalGroup from './components/ModalGroup';
-import SelectGroup from './components/SelectGroup';
 
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
       <InputGroup />
       <h2>Modal</h2>
       <ModalGroup />
-      <SelectGroup />
     </>
   );
 }

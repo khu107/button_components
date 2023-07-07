@@ -7,6 +7,9 @@ function ModalGroup() {
   const [modal, setModal] = useState(false);
   const [modal1, setModal1] = useState(false);
 
+  const closeModal = () => {
+    setModal1();
+  };
   return (
     <ModalGroupWrap>
       <ButtonTag
@@ -17,7 +20,7 @@ function ModalGroup() {
         open modal
       </ButtonTag>
       {modal && (
-        <Modal size="medium">
+        <Modal onClose={closeModal} size="medium">
           <div>
             닫기와 확인 버튼 2개가 있고, 외부 영역을 눌러도 모달이 닫히지
             않아요.
@@ -46,7 +49,7 @@ function ModalGroup() {
       </ButtonTag>
       <div>
         {modal1 && (
-          <Modal size="large">
+          <Modal onClose={closeModal} size="large">
             <div>
               닫기 버튼 1개가 있고, <br /> 외부 영역을 누르면 모달이 닫혀요.
             </div>

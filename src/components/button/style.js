@@ -7,6 +7,9 @@ export const Btn = styled.button`
   color: ${(props) => props.color};
   background-color: ${(props) => props.bg};
   font-size: 13px;
+  &:active {
+    filter: brightness(70%);
+  }
   ${(props) =>
     props.size === 'large' &&
     css`
