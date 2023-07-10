@@ -16,7 +16,7 @@ function ModalGroup() {
       >
         open modal
       </ButtonTag>
-      <Modal size="medium" open={modal}>
+      <Modal size="medium" onClose={() => setModal(true)} open={modal}>
         <div>
           닫기와 확인 버튼 2개가 있고, 외부 영역을 눌러도 모달이 닫히지 않아요.
         </div>
