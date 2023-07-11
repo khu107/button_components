@@ -78,6 +78,7 @@ const ListWrap = styled.div`
   margin-top: 15px;
   position: ${(props) => props.hid};
   display: block;
+  overflow: hidden;
   width: 300px;
   background-color: rgb(255, 255, 255);
   border-radius: 12px;
@@ -86,7 +87,7 @@ const ListWrap = styled.div`
 const List = styled.div`
   line-height: 2;
   padding-left: 10px;
-  border-radius: 5px;
+
   &:hover {
     background-color: #c4bebe;
     cursor: pointer;
